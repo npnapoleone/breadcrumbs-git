@@ -2,17 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Crumb : MonoBehaviour
+public class Crumb
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public string Title;
+    public string Description;
+    public int EstimatedStartTime;
+    public int EstimatedEndTime;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    private int createdAt;
+    private int updatedAt;
 }
