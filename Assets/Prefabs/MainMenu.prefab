@@ -91,7 +91,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45.7
+  m_fontSize: 72
   m_fontSizeBase: 72
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -464,7 +464,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50.45
+  m_fontSize: 64
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -687,17 +687,6 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -963,6 +952,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2984ac1dbcb7840e6915c03cd961d48b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  crumbContainer: {fileID: 3448878076947522924}
+  crumbPreview: {fileID: 6847450198137280713, guid: 45874f75043972b42872dc34ca775537,
+    type: 3}
 --- !u!1 &8049273316228876383
 GameObject:
   m_ObjectHideFlags: 0
