@@ -16,4 +16,8 @@ public class CrumbPreview : MonoBehaviour {
   public void EditCrumb() {
     BreadcrumbsState.Instance.SelectCrumb(crumb);
   }
+
+  public void DeleteCrumb() {
+    BreadcrumbsState.Instance.DeleteCrumb(crumb);
+  }
 }

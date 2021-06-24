@@ -12,20 +12,28 @@ public class BreadcrumbsState : MonoBehaviour {
 
   public List<Crumb> Crumbs;
 
+  public bool Dirty = false;
+
   public Crumb CurrentCrumb {
     get {
       if (currentCrumb == null) {
         currentCrumb = new Crumb();
         Crumbs.Add(currentCrumb);
+        Dirty = true;
       }
       return currentCrumb;
     }
   }
   private Crumb currentCrumb;
 
-  public void Start() {
+  public void Awake() {
     if (Instance == null) { Instance = this; }
     Crumbs = new List<Crumb>();
+  }
+
+  private void LateUpdate()
+  {
+    if (Dirty) { Dirty = false; }
   }
 
   public void SelectCrumb(Crumb c) {
@@ -41,6 +49,15 @@ public class BreadcrumbsState : MonoBehaviour {
 
   public bool CrumbSelected() {
     return currentCrumb != null;
+  }
+
+  public bool DeleteCrumb(Crumb c) {
+    if (!Crumbs.Contains(c)) {
+      return false;
+    }
+    Crumbs.Remove(c);
+    Dirty = true;
+    return true;
   }
 
   // On quit, save to data path

@@ -58,9 +58,11 @@ public class CrumbMenuController : MonoBehaviour {
 
   private void updateTitle(string content) {
     BreadcrumbsState.Instance.CurrentCrumb.Title = content;
+    BreadcrumbsState.Instance.Dirty = true;
   }
 
   private void updateDescription(string content) {
     BreadcrumbsState.Instance.CurrentCrumb.Description = content;
+    BreadcrumbsState.Instance.Dirty = true;
   }
 }
